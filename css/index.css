@@ -1,0 +1,228 @@
+@import url('./normalize.css');
+
+@import url('../fonts/fonts.css');
+
+.page {
+    background-color: #4a41ff;
+    font-family: 'CenturyGothic', 'Arial', sans-serif;
+    max-width: 1800px;
+    min-width: 320px;
+    margin: 0 auto;
+    padding: 0;
+    color: #fff;
+    position: relative;
+    z-index: 10;
+    width: 100%;
+}
+
+.center {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    position: relative;
+}
+
+.header {
+    text-align: center;
+    margin: 0;
+}
+
+.header__title {
+    font-size: 90px;
+    line-height: 80px;
+    max-width: 800px;
+}
+
+.header__subtitle {
+    font-size: 68px;
+    line-height: 70px;
+    margin: 0;
+}
+
+.wrapper {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+.left, .right {
+    position: absolute;
+    top: 5%;
+    display: block;
+    max-width: 60%;
+    max-height: 800px;
+    width: auto;
+    height: auto;
+    z-index: -1;
+}
+
+
+.left {
+    left: -150px;
+}
+
+
+.right {
+    right: -150px;
+}
+
+
+.container {
+    position: relative;
+    border: 5px solid #ffffff;
+    background-color: #3d33d1;
+    min-height: 400px;
+    min-width: 400px;
+    margin-top: 70px;
+}
+.ballons__left, .ballons__right {
+    position: absolute;
+    top: -15%;
+}
+
+.ballons__left {
+    left: -15%;
+}
+
+.ballons__right {
+    right: -15%;
+}
+
+.greeting__message {
+    font-size: 27px;
+    text-align: center;
+    font-weight: 900;
+    overflow-wrap: break-word;
+    padding: 20px;
+    
+}
+
+.buttons {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    max-width: 600px;
+}
+
+.greeting__button {
+    appearance: none;
+    background: #fff;
+    border: 0;
+    border-radius: 5px;
+    color: #080094;
+    font-size: 16px;
+    font-weight: 900;
+    margin: 15px 0;
+    max-width: 150px;
+    padding: 5px 10px;
+}
+
+.greeting__button:hover {
+    background: #fff;
+}
+
+.greeting__button:focus {
+    box-shadow: 0 0 0 2px #080094;
+    outline: none;
+}
+
+.footer {
+    padding: 20px 0;
+}
+
+.social-links {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.social-link {
+    margin-left: 10px;
+    text-decoration: none;
+}
+
+.social-icon {
+    width: 30px;
+}
+
+
+
+@media screen and (max-width: 768px) {
+    
+    .left, .right {
+        display: none;
+    }
+    .header__title {
+        font-size: 60px;
+    }
+    .header__subtitle {
+        font-size: 35px;
+    }
+
+    .greeting__message {
+        font-size: 20px;
+    }
+
+    .container {
+        margin-top: 40px;
+        border: 2px solid #ffffff;
+    }
+    
+    .ballons__left {
+        left: -20%;
+    }
+    
+    .ballons__right {
+        right: -20%;
+    }
+   }
+
+   @media screen and (max-width: 500px) {
+    
+    .header {
+
+        margin-top: 10px;
+    }
+    .header__title {
+        font-size: 30px;
+        line-height: 35px;
+        margin: 0;
+    }
+    .header__subtitle {
+        font-size: 23px;
+    }
+
+    .container {
+        margin-top: 20px;
+        min-width: 300px;
+        min-height: 300px;
+    }
+
+    .greeting__message {
+        font-size: 16px;
+        max-width: 270px;
+    }
+
+    .ballons__left {
+        left: -35%;
+    }
+    
+    .ballons__right {
+        right: -35%;
+    }
+
+   }
+
+
+   @media screen and (max-width: 425px) {
+    
+    .ballons__left,  .ballons__right {
+       display: none;
+    }
+
+   }
